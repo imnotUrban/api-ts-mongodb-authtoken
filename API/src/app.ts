@@ -6,13 +6,13 @@ import cors from "cors";
 const app: Application = express();
 
 //Settings
-app.set("port", 4000);
+app.set("port", 3000);
 
 //Middleware
 app.use(
   cors({
     origin: "http://localhost:3000",
-    credentials: true, // Agrega esta línea para permitir el envío de credenciales
+    credentials: true, // Agrega esta lsínea paras permitir el envío de credenciales
   })
 );
 app.use(morgan("dev"));
